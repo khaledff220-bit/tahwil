@@ -1,0 +1,10 @@
+# robots.txt لموقع تحويلاتي
+User-agent: *
+Allow: /
+
+# تحديد موقع خريطة الموقع
+Sitemap: https://tahwilati.com/sitemap.xml
+
+# منع الزحف إلى صفحات غير مهمة (اختياري)
+Disallow: /admin/
+Disallow: /private/
