@@ -6,18 +6,20 @@ import TodayDatePage from '@/pages/TodayDate/TodayDatePage';
 import AgeCalculatorPage from '@/pages/AgeCalculator/AgeCalculatorPage';
 import CompareDatePage from '@/pages/CompareDate/CompareDatePage';
 import NotFoundPage from '@/pages/404/NotFoundPage';
+import CurrencyPage from '@/pages/Currency/CurrencyPage';
 
 export const router = createBrowserRouter([
   {
     path: '/',
-    element: <App />, // هذا هو الـ Layout الرئيسي الذي يحتوي على Header و Footer
+    element: <App />, // الهيكل الرئيسي للموقع
     children: [
       { index: true, element: <Home /> },
       { path: 'date', element: <DatePage /> },
       { path: 'date/today', element: <TodayDatePage /> },
       { path: 'date/age-calculator', element: <AgeCalculatorPage /> },
       { path: 'date/compare', element: <CompareDatePage /> },
-      // وضع 404 هنا يضمن ظهور الهيدر والفوتر حول رسالة الخطأ
+      { path: 'currency', element: <CurrencyPage /> },
+      // وضع صفحة 404 هنا يجعلها تظهر بداخل التصميم العام للموقع
       { path: '*', element: <NotFoundPage /> }
     ]
   }
