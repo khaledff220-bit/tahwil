@@ -237,7 +237,7 @@ const ConvertPair: React.FC = () => {
             <Link
               key={c.code}
               to={`/currency/convert/${c.code.toLowerCase()}/egp`}
-              className="bg-white p-4 rounded-xl text-center shadow-sm border border-gray-100 hover:shadow-md hover:border-blue-500 hover:bg-blue-50 transition-all flex flex-col items-center justify-center"
+              className="bg-white p-4 rounded-xl text-center shadow-sm border border-gray-100 hover:shadow-md hover:border-blue-500 hover:bg-blue-50 active:scale-95 active:ring-2 active:ring-blue-100 transition-all flex flex-col items-center justify-center"
             >
               <span className="text-3xl mb-2">{getFlag(c.code)}</span>
               <div className="font-bold text-gray-800">{c.code}</div>
