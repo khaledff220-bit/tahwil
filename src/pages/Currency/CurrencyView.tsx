@@ -200,10 +200,15 @@ const CurrencyView: React.FC<CurrencyViewProps> = ({
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {currencies.filter(c => c.isArabic).map(c => (
-              <div key={c.code} className="bg-gray-50 p-3 rounded-xl text-center">
+              <Link
+                key={c.code}
+                to={`/currency/convert/${c.code.toLowerCase()}/egp`}
+                className="bg-white p-4 rounded-xl text-center shadow-sm border border-gray-100 hover:shadow-md hover:border-blue-500 hover:bg-blue-50 transition-all flex flex-col items-center justify-center"
+              >
+                <span className="text-3xl mb-2">{c.flag || "🏁"}</span>
                 <div className="font-bold text-gray-800">{c.code}</div>
-                <div className="text-sm text-gray-600">{c.name}</div>
-              </div>
+                <div className="text-xs text-gray-500">{c.name}</div>
+              </Link>
             ))}
           </div>
         </div>

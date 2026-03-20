@@ -1,9 +1,11 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { useLocation } from "react-router-dom";
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 
 const NotFoundPage: React.FC = () => {
+  const location = useLocation();
   // تحديث عنوان الصفحة لتحسين SEO
   useEffect(() => {
     document.title = 'الصفحة غير موجودة - 404 - تحويلاتي';
@@ -49,6 +51,7 @@ const NotFoundPage: React.FC = () => {
             
             {/* وصف الخطأ */}
             <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+          <div className="bg-red-50 p-4 rounded text-red-600 font-mono mt-4">المسار الذي تبحث عنه: {location.pathname}</div>
               الصفحة التي تبحث عنها ربما تم نقلها أو حذفها، أو أن الرابط الذي استخدمته غير صحيح.
             </p>
             
