@@ -1,6 +1,8 @@
 import { createBrowserRouter } from 'react-router-dom';
 import App from '@/App';
 import Home from '@/pages/Home';
+import WeightPage from '@/pages/Weight/WeightPage';
+import WeightConvertPair from '@/pages/Weight/WeightConvertPair';
 import DatePage from '@/pages/date';
 import TodayDatePage from '@/pages/TodayDate/TodayDatePage';
 import AgeCalculatorPage from '@/pages/AgeCalculator/AgeCalculatorPage';
@@ -22,7 +24,8 @@ export const router = createBrowserRouter([
       // 👇 الترتيب الصحيح الآن: التفصيلي أولاً
       { path: 'currency/convert/:from/:to', element: <ConvertPair /> },
       { path: 'currency', element: <CurrencyPage /> },
-      
+      { path: 'weight/convert/:from/:to', element: <WeightConvertPair /> }, 
+      { path: 'weight', element: <WeightPage /> },
       { path: '*', element: <NotFoundPage /> }
     ]
   }
