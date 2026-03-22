@@ -134,7 +134,7 @@ const WeightConvertPair: React.FC = () => {
   const getFaqItems = () => {
     const baseFaq = [
       { q: `كم يساوي 1 ${fromUnit.name} بالـ ${toUnit.name}؟`, a: `1 ${fromUnit.name} = ${result?.formattedFactor || '...'} ${toUnit.name}.` },
-      { q: `كيف أحول ${fromUnit.name} إلى ${toUnit.name}؟`, a: `استخدم الأداة أعلاه: أدخل المبلغ بالـ ${fromUnit.name}، وستظهر النتيجة فوراً بالـ ${toUnit.name}.` },
+      { q: `كيف أحول ${fromUnit.name} إلى ${toUnit.name}؟`, a: `استخدم الأداة أعلاه: أدخل القيمة بالـ ${fromUnit.name}، وستظهر النتيجة فوراً بالـ ${toUnit.name}.` },
     ];
 
     // أسئلة خاصة بالذهب
@@ -214,14 +214,14 @@ const WeightConvertPair: React.FC = () => {
           {/* حقل المبلغ */}
           <div className="mb-6">
             <label className="block text-gray-700 font-bold mb-2 text-right">
-              المبلغ بالـ {fromUnit.name}
+              القيمة بالـ {fromUnit.name}
             </label>
             <input
               type="number"
               value={amount}
               onChange={(e) => setAmount(e.target.value)}
               className="w-full p-4 text-2xl border-2 border-gray-200 rounded-xl focus:border-green-500 focus:ring-2 focus:ring-green-200 transition active:scale-95"
-              placeholder={`أدخل المبلغ بالـ ${fromUnit.symbol}`}
+              placeholder={`أدخل القيمة بالـ ${fromUnit.symbol}`}
               step="any"
               min="0"
             />

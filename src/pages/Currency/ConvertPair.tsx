@@ -3,6 +3,74 @@ import { useParams, Link, useNavigate } from 'react-router-dom';
 import { CURRENCIES, convertCurrency } from './CurrencyLogic';
 import { getCurrencySymbol, getCurrencyName } from './CurrencyLogic';
 
+// ==========================================
+// قالب المحتوى النصي الديناميكي - تحويل العملات
+// ==========================================
+
+// دالة المقدمة
+const getCurrencyIntroduction = (fromCurrency: string, toCurrency: string, rate?: number): string => {
+  return `
+    <p class="text-gray-700 leading-relaxed">
+      ${fromCurrency} مقابل ${toCurrency} من أكثر عمليات تحويل العملات طلباً في العالم، سواء للتجارة أو السفر أو الاستثمار.
+      في هذه الصفحة، نقدم لك <strong>سعر الصرف المباشر والمحدث</strong> بناءً على أحدث بيانات التداول العالمية.
+      ${rate ? `حالياً، 1 ${fromCurrency} يساوي ${rate.toFixed(4)} ${toCurrency}.` : ''}
+    </p>
+    <p class="text-gray-700 leading-relaxed mt-2">
+      تتغير الأسعار بشكل لحظي تبعاً لتحركات السوق العالمية، لذلك نحرص على تحديث بياناتنا باستمرار لنضمن لك <strong>دقة لا مثيل لها</strong> عند التحويل.
+    </p>
+  `;
+};
+
+// دالة النصائح المالية
+const getCurrencySmartTips = (): string => {
+  return `
+    <div class="grid md:grid-cols-2 gap-4 mt-6">
+      <div class="bg-blue-50 p-4 rounded-xl border border-blue-200">
+        <div class="flex items-center gap-2 mb-2">
+          <span class="text-xl">⏰</span>
+          <h4 class="font-bold text-blue-800">توقيت التحويل</h4>
+        </div>
+        <p class="text-sm text-gray-700">
+          أسواق العملات العالمية تغلق في عطلة نهاية الأسبوع (السبت والأحد)، مما قد يؤدي لثبات الأسعار بشكل وهمي.
+          يُفضل إجراء التحويلات خلال أيام الأسبوع للحصول على أحدث الأسعار.
+        </p>
+      </div>
+      <div class="bg-green-50 p-4 rounded-xl border border-green-200">
+        <div class="flex items-center gap-2 mb-2">
+          <span class="text-xl">🏛️</span>
+          <h4 class="font-bold text-green-800">سعر الشراء vs سعر البيع</h4>
+        </div>
+        <p class="text-sm text-gray-700">
+          الأداة أعلاه تعرض <strong>سعر السوق المتوسط (Mid-market rate)</strong>، وهو السعر العادل بين البنوك.
+          تختلف أسعار محلات الصرافة بإضافة عمولة أو هامش ربح، لذا استخدم سعرنا كمرجع للتفاوض.
+        </p>
+      </div>
+    </div>
+  `;
+};
+
+// دالة الأسئلة الشائعة
+const getCurrencyDynamicFAQ = (fromCurrency: string, toCurrency: string): { q: string; a: string }[] => {
+  return [
+    {
+      q: `كيف أحصل على أفضل سعر عند تحويل ${fromCurrency} إلى ${toCurrency}؟`,
+      a: `لمراقبة أفضل سعر، يفضل متابعة التذبذبات اليومية للعملة واستخدام السعر المباشر كمرجع. يمكنك أيضاً ضبط تنبيهات السعر (قريباً) لمعرفة متى يصل السعر إلى المستوى الذي تريده.`
+    },
+    {
+      q: `ما الذي يؤثر على سعر صرف ${fromCurrency} اليوم؟`,
+      a: `تتأثر أسعار العملات بعدة عوامل: قرارات البنوك المركزية (مثل رفع أو خفض الفائدة)، التضخم، الاستقرار السياسي، ومؤشرات الاقتصاد الكلي. كل هذه العوامل تنعكس مباشرة على سعر ${fromCurrency} مقابل ${toCurrency}.`
+    },
+    {
+      q: `هل السعر المعروض في الأداة هو نفسه في البنوك ومكاتب الصرافة؟`,
+      a: `السعر المعروض هو <strong>سعر السوق المتوسط (Mid-market rate)</strong>، وهو السعر الذي تتعامل به البنوك فيما بينها. قد تختلف أسعار البنوك ومكاتب الصرافة بإضافة عمولة أو هامش ربح، لذا يُنصح باستخدام سعرنا كمرجع أساسي قبل التعامل.`
+    },
+    {
+      q: `كم مرة يتم تحديث أسعار الصرف في الموقع؟`,
+      a: `نقوم بتحديث الأسعار بشكل دوري (كل ساعة) من خلال مزود بيانات موثوق، لضمان حصولك على أحدث الأسعار المتاحة في الأسواق العالمية.`
+    }
+  ];
+};
+
 const ConvertPair: React.FC = () => {
   const navigate = useNavigate();
   const { from, to } = useParams<{ from: string; to: string }>();
@@ -226,6 +294,32 @@ const ConvertPair: React.FC = () => {
           </div>
         </div>
       )}
+
+      {/* ========== محتوى SEO الغني ========== */}
+      <div className="mt-8 bg-white p-6 rounded-2xl shadow-lg">
+        <h2 className="text-xl font-bold text-gray-800 mb-4">
+          معلومات عن تحويل {fromCurrency.name} إلى {toCurrency.name}
+        </h2>
+        <div dangerouslySetInnerHTML={{ __html: getCurrencyIntroduction(fromCurrency.name, toCurrency.name, rate || undefined) }} />
+        
+        {/* النصائح المالية */}
+        <div dangerouslySetInnerHTML={{ __html: getCurrencySmartTips() }} />
+      </div>
+
+      {/* ========== أسئلة شائعة ========== */}
+      <div className="mt-8 bg-white p-6 rounded-2xl shadow-lg">
+        <h2 className="text-2xl font-bold text-gray-800 mb-6 text-center">
+          أسئلة شائعة عن تحويل {fromCurrency.name} إلى {toCurrency.name}
+        </h2>
+        <div className="space-y-4">
+          {getCurrencyDynamicFAQ(fromCurrency.name, toCurrency.name).map((item, idx) => (
+            <div key={idx} className="border-b border-gray-200 pb-4">
+              <h3 className="font-bold text-gray-800 mb-2">{item.q}</h3>
+              <p className="text-gray-600" dangerouslySetInnerHTML={{ __html: item.a }} />
+            </div>
+          ))}
+        </div>
+      </div>
 
       {/* ✅ قسم الأعلام الجديد - العملات العربية */}
       <div className="mt-12 bg-white p-8 rounded-2xl shadow-lg">

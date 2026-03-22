@@ -177,17 +177,17 @@ const WeightView: React.FC<WeightViewProps> = ({
           </div>
 
           <div className="p-8">
-            {/* حقل المبلغ مع تأثير live calculation */}
+            {/* حقل القيمة مع تأثير live calculation */}
             <div className="mb-6">
               <label className="block text-gray-700 font-bold mb-2 text-right">
-                المبلغ
+                القيمة
               </label>
               <input
                 type="number"
                 value={fromAmount}
                 onChange={(e) => onFromAmountChange(e.target.value)}
                 className="w-full p-4 text-2xl border-2 border-gray-200 rounded-xl focus:border-green-500 focus:ring-2 focus:ring-green-200 transition active:scale-95"
-                placeholder="أدخل المبلغ"
+                placeholder="أدخل القيمة"
                 step="any"
                 min="0"
               />

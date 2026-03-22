@@ -5,9 +5,11 @@ import WeightPage from '@/pages/Weight/WeightPage';
 import WeightConvertPair from '@/pages/Weight/WeightConvertPair';
 import DatePage from '@/pages/date';
 import TodayDatePage from '@/pages/TodayDate/TodayDatePage';
+import LengthConvertPair from '@/pages/Length/LengthConvertPair';
 import AgeCalculatorPage from '@/pages/AgeCalculator/AgeCalculatorPage';
 import CompareDatePage from '@/pages/CompareDate/CompareDatePage';
 import NotFoundPage from '@/pages/404/NotFoundPage';
+import LengthPage from '@/pages/Length/LengthPage';
 import CurrencyPage from '@/pages/Currency/CurrencyPage';
 import ConvertPair from '@/pages/Currency/ConvertPair';
 
@@ -26,6 +28,8 @@ export const router = createBrowserRouter([
       { path: 'currency', element: <CurrencyPage /> },
       { path: 'weight/convert/:from/:to', element: <WeightConvertPair /> }, 
       { path: 'weight', element: <WeightPage /> },
+      { path: 'length', element: <LengthPage /> },
+      { path: 'length/convert/:from/:to', element: <LengthConvertPair /> },
       { path: '*', element: <NotFoundPage /> }
     ]
   }

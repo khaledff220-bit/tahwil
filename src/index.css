@@ -13,3 +13,25 @@
 body {
   font-family: 'Cairo', sans-serif;
 }
+
+/* تأثيرات تفاعلية للأزرار */
+button:active {
+  transform: scale(0.96) !important;
+  transition: transform 0.05s ease !important;
+}
+
+button:hover {
+  transform: translateY(-3px) !important;
+  transition: transform 0.2s ease !important;
+}
+
+/* تأثيرات خاصة للبطاقات */
+a:active {
+  transform: scale(0.98) !important;
+  transition: transform 0.05s ease !important;
+}
+
+a:hover {
+  transform: translateY(-2px) !important;
+  transition: transform 0.2s ease !important;
+}
