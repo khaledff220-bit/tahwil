@@ -1,37 +1,68 @@
 @import "tailwindcss";
 
-@layer utilities {
-  .hide-scrollbar {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-  }
-  .hide-scrollbar::-webkit-scrollbar {
-    display: none;
-  }
-}
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&display=swap');
 
 body {
-  font-family: 'Cairo', sans-serif;
+  font-family: 'Tajawal', 'IBM Plex Sans Arabic', sans-serif;
+  background: radial-gradient(circle at 0% 0%, #f8fafc 0%, #eef2ff 100%);
+  min-height: 100vh;
 }
 
-/* تأثيرات تفاعلية للأزرار */
-button:active {
-  transform: scale(0.96) !important;
-  transition: transform 0.05s ease !important;
+/* تأثير الزجاج (Glassmorphism) */
+.glass-card {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
 }
 
-button:hover {
-  transform: translateY(-3px) !important;
-  transition: transform 0.2s ease !important;
+.glass-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
 }
 
-/* تأثيرات خاصة للبطاقات */
-a:active {
-  transform: scale(0.98) !important;
-  transition: transform 0.05s ease !important;
+/* شريط المعلومات المتحرك (Ticker) */
+.ticker {
+  overflow: hidden;
+  white-space: nowrap;
+  background: #0f172a;
+  border-top: 1px solid #1e293b;
+  padding: 10px 0;
 }
 
-a:hover {
-  transform: translateY(-2px) !important;
-  transition: transform 0.2s ease !important;
+.ticker-content {
+  display: inline-block;
+  animation: ticker-move 30s linear infinite;
+}
+
+.ticker-content span {
+  display: inline-block;
+  padding: 0 30px;
+  color: #94a3b8;
+  font-size: 0.9rem;
+}
+
+@keyframes ticker-move {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+/* تأثير الظهور التدريجي (Scroll Reveal) */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease-out;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* إخفاء علامة السهم في الأسئلة الشائعة */
+details summary::-webkit-details-marker {
+  display: none;
 }
