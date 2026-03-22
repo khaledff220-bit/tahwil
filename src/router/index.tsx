@@ -12,6 +12,8 @@ import NotFoundPage from '@/pages/404/NotFoundPage';
 import LengthPage from '@/pages/Length/LengthPage';
 import CurrencyPage from '@/pages/Currency/CurrencyPage';
 import ConvertPair from '@/pages/Currency/ConvertPair';
+import TemperaturePage from '@/pages/Temperature/TemperaturePage';
+import TemperatureConvertPair from '@/pages/Temperature/TemperatureConvertPair'; // ✅ السطر الجديد
 
 export const router = createBrowserRouter([
   {
@@ -23,13 +25,15 @@ export const router = createBrowserRouter([
       { path: 'date/today', element: <TodayDatePage /> },
       { path: 'date/age-calculator', element: <AgeCalculatorPage /> },
       { path: 'date/compare', element: <CompareDatePage /> },
-      // 👇 الترتيب الصحيح الآن: التفصيلي أولاً
+      // 👇 الترتيب الصحيح: التفصيلي أولاً
       { path: 'currency/convert/:from/:to', element: <ConvertPair /> },
       { path: 'currency', element: <CurrencyPage /> },
-      { path: 'weight/convert/:from/:to', element: <WeightConvertPair /> }, 
+      { path: 'weight/convert/:from/:to', element: <WeightConvertPair /> },
       { path: 'weight', element: <WeightPage /> },
-      { path: 'length', element: <LengthPage /> },
       { path: 'length/convert/:from/:to', element: <LengthConvertPair /> },
+      { path: 'length', element: <LengthPage /> },
+      { path: 'temperature/convert/:from/:to', element: <TemperatureConvertPair /> }, // ✅ المسار الجديد (قبل الرئيسي)
+      { path: 'temperature', element: <TemperaturePage /> },
       { path: '*', element: <NotFoundPage /> }
     ]
   }
