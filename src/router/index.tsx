@@ -3,7 +3,7 @@ import App from '@/App';
 import Home from '@/pages/Home';
 import WeightPage from '@/pages/Weight/WeightPage';
 import WeightConvertPair from '@/pages/Weight/WeightConvertPair';
-import DatePage from '@/pages/date';
+import DatePage from '@/pages/Date/DatePage';
 import TodayDatePage from '@/pages/TodayDate/TodayDatePage';
 import LengthConvertPair from '@/pages/Length/LengthConvertPair';
 import AgeCalculatorPage from '@/pages/AgeCalculator/AgeCalculatorPage';
