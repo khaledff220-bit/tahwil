@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 
 const tools = [
@@ -49,7 +48,6 @@ const Home: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-white">
-      <Header />
       
       <main>
         {/* Hero Section - العنوان الرئيسي */}
