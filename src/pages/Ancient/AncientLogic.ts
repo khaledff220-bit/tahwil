@@ -29,19 +29,20 @@ export const convertAncient = (
 
     if (!fromUnit || !toUnit) return null;
 
-    // التحويل: (amount / fromUnit.factor) * toUnit.factor
-    const toAmount = (amount / fromUnit.factor) * toUnit.factor;
+    // ✅ المعادلة الصحيحة للنتيجة
+    const toAmount = (amount * fromUnit.factor) / toUnit.factor;
 
     return {
       fromAmount: amount,
       fromUnit: fromUnitId,
       toAmount,
       toUnit: toUnitId,
-      factor: toUnit.factor / fromUnit.factor,
+      // ✅ تصحيح معامل العرض ليظهر 0.462 وليس 2.16
+      factor: fromUnit.factor / toUnit.factor,
       lastUpdate: new Date().toLocaleString('ar-EG'),
       formattedFromAmount: formatNumber(amount, 2),
       formattedToAmount: formatNumber(toAmount, 6),
-      formattedFactor: formatNumber(toUnit.factor / fromUnit.factor, 6)
+      formattedFactor: formatNumber(fromUnit.factor / toUnit.factor, 6)
     };
   } catch (error) {
     console.error('خطأ في تحويل الوحدات التراثية:', error);

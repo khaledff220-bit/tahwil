@@ -56,18 +56,19 @@ const Footer: React.FC = () => {
         { name: 'مقارنة تواريخ', path: '/date/compare' },
       ]
     },
-    // ✅ قسم المقاييس التراثية الجديد
     {
-      title: '🏺 مقاييس تراثية',
-      links: [
-        { name: 'ذراع → متر', path: '/ancient' },
-        { name: 'شبر → سم', path: '/ancient' },
-        { name: 'من → كيلو', path: '/ancient' },
-        { name: 'مثقال → جرام', path: '/ancient' },
-        { name: 'قامة → متر', path: '/ancient' },
-        { name: 'فرسخ → كيلو', path: '/ancient' },
-      ]
-    },
+  title: '🏺 مقاييس تراثية',
+  links: [
+    { name: 'ذراع → متر', path: '/ancient/convert/cubit/meter' },
+    { name: 'شبر → سم', path: '/ancient/convert/span/centimeter' },
+    { name: 'من → كيلو', path: '/ancient/convert/mann/kilogram' },
+    { name: 'مثقال → جرام', path: '/ancient/convert/mithqal/gram' },
+    { name: 'قامة → متر', path: '/ancient/convert/fathom/meter' },
+    { name: 'فرسخ → كيلو', path: '/ancient/convert/league/kilometer' },
+    { name: 'درهم → جرام', path: '/ancient/convert/dirham/gram' },
+    { name: 'رطل سعودي → كيلو', path: '/ancient/convert/gulf_lb/kilogram' },
+  ]
+},
   ];
 
   return (

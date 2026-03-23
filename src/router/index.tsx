@@ -12,6 +12,7 @@ import NotFoundPage from '@/pages/404/NotFoundPage';
 import LengthPage from '@/pages/Length/LengthPage';
 import CurrencyPage from '@/pages/Currency/CurrencyPage';
 import ConvertPair from '@/pages/Currency/ConvertPair';
+import AncientConvertPair from '@/pages/Ancient/AncientConvertPair';
 import TemperaturePage from '@/pages/Temperature/TemperaturePage';
 import TemperatureConvertPair from '@/pages/Temperature/TemperatureConvertPair';
 import AncientPage from '@/pages/Ancient/AncientPage'; // ✅ إضافة صفحة المقاييس التراثية
@@ -35,6 +36,8 @@ export const router = createBrowserRouter([
       { path: 'length', element: <LengthPage /> },
       { path: 'temperature/convert/:from/:to', element: <TemperatureConvertPair /> },
       { path: 'temperature', element: <TemperaturePage /> },
+      { path: 'ancient/convert/:from/:to', element: <AncientConvertPair /> },
+      { path: 'ancient', element: <AncientPage /> },
       { path: 'ancient', element: <AncientPage /> }, // ✅ مسار المقاييس التراثية
       { path: '*', element: <NotFoundPage /> }
     ]
