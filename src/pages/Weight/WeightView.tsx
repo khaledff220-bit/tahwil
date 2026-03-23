@@ -228,7 +228,7 @@ const WeightView: React.FC<WeightViewProps> = ({
             <button
               onClick={onConvert}
               disabled={loading || !fromAmount}
-              className="w-full bg-gradient-to-l from-green-600 to-emerald-600 text-white py-4 rounded-xl font-bold hover:shadow-lg transition disabled:opacity-50 active:scale-95 active:ring-2 active:ring-green-300"
+              className="w-full bg-gradient-to-l from-green-600 to-emerald-600 text-white py-4 rounded-xl font-bold hover:shadow-xl transition disabled:opacity-50 active:scale-95 active:ring-2 active:ring-green-300"
             >
               {loading ? 'جاري التحويل...' : 'تحويل'}
             </button>

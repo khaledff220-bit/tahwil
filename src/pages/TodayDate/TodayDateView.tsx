@@ -70,7 +70,7 @@ const TodayDateView: React.FC<Props> = ({ data, onCopy }) => {
 
             {/* بطاقات التاريخ */}
             <div className="grid md:grid-cols-2 gap-6 mb-8">
-              <div className="bg-blue-50 p-8 rounded-2xl border border-blue-200 text-center hover:shadow-lg transition">
+              <div className="bg-blue-50 p-8 rounded-2xl border border-blue-200 text-center hover:shadow-xl transition">
                 <h2 className="text-blue-800 font-bold text-xl mb-3">التاريخ الميلادي</h2>
                 <p className="text-2xl text-blue-900 font-semibold">{data.gregorianDate}</p>
                 <p className="text-blue-600 mt-2">
@@ -78,7 +78,7 @@ const TodayDateView: React.FC<Props> = ({ data, onCopy }) => {
                 </p>
               </div>
               
-              <div className="bg-green-50 p-8 rounded-2xl border border-green-200 text-center hover:shadow-lg transition">
+              <div className="bg-green-50 p-8 rounded-2xl border border-green-200 text-center hover:shadow-xl transition">
                 <h2 className="text-green-800 font-bold text-xl mb-3">التاريخ الهجري</h2>
                 <p className="text-2xl text-green-900 font-semibold">{data.hijriDate}</p>
                 <p className="text-green-600 mt-2">

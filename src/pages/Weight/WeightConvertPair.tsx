@@ -250,7 +250,7 @@ const WeightConvertPair: React.FC = () => {
           <button
             onClick={handleConvert}
             disabled={loading}
-            className="w-full bg-gradient-to-l from-green-600 to-emerald-600 text-white py-4 rounded-xl font-bold hover:shadow-lg transition disabled:opacity-50 active:scale-95 active:ring-2 active:ring-green-300"
+            className="w-full bg-gradient-to-l from-green-600 to-emerald-600 text-white py-4 rounded-xl font-bold hover:shadow-xl transition disabled:opacity-50 active:scale-95 active:ring-2 active:ring-green-300"
           >
             {loading ? 'جاري التحويل...' : 'تحويل'}
           </button>
@@ -339,7 +339,7 @@ const WeightConvertPair: React.FC = () => {
                   <Link
                     key={`${pair.from}-${pair.to}`}
                     to={`/weight/convert/${pair.from}/${pair.to}`}
-                    className="bg-white/70 backdrop-blur-sm p-4 rounded-xl border border-gray-200 hover:border-green-500 hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 text-center group"
+                    className="bg-white/70 backdrop-blur-sm p-4 rounded-xl border border-gray-200 hover:border-green-500 hover:shadow-md hover:-translate-y-1 transition-all duration-200 text-center group"
                   >
                     <div className="flex items-center justify-center gap-2 mb-2">
                       <span className="text-2xl group-hover:scale-110 transition-transform duration-200">{pair.icon}</span>

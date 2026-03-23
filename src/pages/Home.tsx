@@ -65,7 +65,7 @@ const Home: React.FC = () => {
                 منصة القياس العربية الأولى. حوّل بدقة، وتعلّم بذكاء.
               </p>
               <div className="flex flex-wrap gap-4 justify-center">
-                <Link to="/currency" className="px-8 py-3 bg-gradient-to-r from-emerald-500 to-teal-500 text-white rounded-full font-medium hover:shadow-lg transition-all hover:-translate-y-0.5">
+                <Link to="/currency" className="px-8 py-3 bg-gradient-to-r from-emerald-500 to-teal-500 text-white rounded-full font-medium hover:shadow-xl transition-all hover:-translate-y-1">
                   ابدأ التحويل الآن
                 </Link>
                 <a href="#about" className="px-8 py-3 bg-white border border-gray-200 rounded-full font-medium hover:bg-gray-50 transition-all">

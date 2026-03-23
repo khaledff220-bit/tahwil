@@ -79,7 +79,7 @@ export const ANCIENT_UNITS: AncientUnit[] = [
 
   // ========== الوحدات الحديثة ==========
   {
-    id: 'm',
+    id: 'meter',
     name: 'متر',
     symbol: 'م',
     factor: 1,
@@ -88,7 +88,7 @@ export const ANCIENT_UNITS: AncientUnit[] = [
     description: 'الوحدة الأساسية للطول في النظام الدولي.'
   },
   {
-    id: 'km',
+    id: 'kilometer',
     name: 'كيلومتر',
     symbol: 'كم',
     factor: 1000,
@@ -97,7 +97,7 @@ export const ANCIENT_UNITS: AncientUnit[] = [
     description: '1000 متر.'
   },
   {
-    id: 'cm',
+    id: 'centimeter',
     name: 'سنتيمتر',
     symbol: 'سم',
     factor: 0.01,
@@ -106,7 +106,7 @@ export const ANCIENT_UNITS: AncientUnit[] = [
     description: '0.01 متر.'
   },
   {
-    id: 'kg',
+    id: 'kilogram',
     name: 'كيلوجرام',
     symbol: 'كجم',
     factor: 1,
@@ -115,7 +115,7 @@ export const ANCIENT_UNITS: AncientUnit[] = [
     description: 'الوحدة الأساسية للوزن في النظام الدولي.'
   },
   {
-    id: 'g',
+    id: 'gram',
     name: 'جرام',
     symbol: 'جم',
     factor: 0.001,

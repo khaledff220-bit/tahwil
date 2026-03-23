@@ -247,7 +247,7 @@ const ConvertPair: React.FC = () => {
           <button
             onClick={handleConvert}
             disabled={loading}
-            className="w-full bg-gradient-to-l from-blue-600 to-cyan-600 text-white py-4 rounded-xl font-bold hover:shadow-lg transition disabled:opacity-50"
+            className="w-full bg-gradient-to-l from-blue-600 to-cyan-600 text-white py-4 rounded-xl font-bold hover:shadow-xl transition disabled:opacity-50"
           >
             {loading ? 'جاري التحويل...' : 'تحويل'}
           </button>
@@ -351,7 +351,7 @@ const ConvertPair: React.FC = () => {
             <Link
               key={`${pair.from}-${pair.to}`}
               to={`/currency/convert/${pair.from.toLowerCase()}/${pair.to.toLowerCase()}`}
-              className="bg-white/70 backdrop-blur-sm p-4 rounded-xl border border-gray-200 hover:border-blue-500 hover:shadow-lg transition text-center group"
+              className="bg-white/70 backdrop-blur-sm p-4 rounded-xl border border-gray-200 hover:border-blue-500 hover:shadow-xl transition text-center group"
             >
               <div className="flex items-center justify-center gap-2 mb-2">
                 <span className="text-2xl">{getFlag(pair.from)}</span>

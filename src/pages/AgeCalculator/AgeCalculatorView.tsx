@@ -117,7 +117,7 @@ const AgeCalculatorView: React.FC<Props> = ({
               <button
                 onClick={onCalculate}
                 disabled={isLoading || !year}
-                className="w-full bg-gradient-to-l from-purple-600 to-pink-600 text-white py-4 rounded-xl font-bold hover:shadow-lg transition disabled:opacity-50 transform hover:scale-[1.02] active:scale-[0.98]"
+                className="w-full bg-gradient-to-l from-purple-600 to-pink-600 text-white py-4 rounded-xl font-bold hover:shadow-xl transition disabled:opacity-50 transform hover:scale-[1.02] active:scale-[0.98]"
               >
                 {isLoading ? 'جاري الحساب...' : 'احسب عمري الآن'}
               </button>

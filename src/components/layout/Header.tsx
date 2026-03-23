@@ -30,7 +30,7 @@ const Header: React.FC = () => {
                 key={href}
                 to={href}
                 className={`px-3 py-1 text-sm bg-${color}-50 text-${color}-600 rounded-full whitespace-nowrap
-                           hover:shadow-md transition duration-200 flex items-center gap-1`}
+                           hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 duration-200 flex items-center gap-1`}
               >
                 <span>{icon}</span>
                 <span>{label}</span>

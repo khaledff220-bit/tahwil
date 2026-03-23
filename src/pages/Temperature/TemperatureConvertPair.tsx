@@ -467,7 +467,7 @@ const TemperatureConvertPair: React.FC = () => {
                   <Link
                     key={`${pair.from}-${pair.to}`}
                     to={`/temperature/convert/${pair.from}/${pair.to}`}
-                    className="bg-white/70 backdrop-blur-sm p-3 rounded-xl border border-gray-200 hover:border-orange-500 hover:shadow-lg hover:-translate-y-1 transition-all duration-200 text-center group"
+                    className="bg-white/70 backdrop-blur-sm p-3 rounded-xl border border-gray-200 hover:border-orange-500 hover:shadow-xl hover:-translate-y-1 transition-all duration-200 text-center group"
                   >
                     <div className="flex items-center justify-center gap-2 mb-1">
                       <span className="text-xl">{pair.icon}</span>

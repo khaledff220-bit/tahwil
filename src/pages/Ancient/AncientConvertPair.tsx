@@ -8,24 +8,24 @@ import { convertAncient } from './AncientLogic';
 // ==========================================
 const QUICK_PAIRS = [
   // وحدات الطول التراثية
-  { from: 'cubit', to: 'meter', name: 'ذراع → متر', icon: '🕌', category: 'length' },
-  { from: 'meter', to: 'cubit', name: 'متر → ذراع', icon: '📏', category: 'length' },
-  { from: 'span', to: 'centimeter', name: 'شبر → سم', icon: '🖐️', category: 'length' },
-  { from: 'centimeter', to: 'span', name: 'سم → شبر', icon: '📏', category: 'length' },
-  { from: 'fathom', to: 'meter', name: 'قامة → متر', icon: '🙌', category: 'length' },
-  { from: 'meter', to: 'fathom', name: 'متر → قامة', icon: '📏', category: 'length' },
-  { from: 'league', to: 'kilometer', name: 'فرسخ → كيلومتر', icon: '🐫', category: 'length' },
-  { from: 'kilometer', to: 'league', name: 'كيلومتر → فرسخ', icon: '🏃', category: 'length' },
+  { from: 'cubit', to: 'm', name: 'ذراع → متر', icon: '🕌', category: 'length' },
+  { from: 'm', to: 'cubit', name: 'متر → ذراع', icon: '📏', category: 'length' },
+  { from: 'span', to: 'cm', name: 'شبر → سم', icon: '🖐️', category: 'length' },
+  { from: 'cm', to: 'span', name: 'سم → شبر', icon: '📏', category: 'length' },
+  { from: 'fathom', to: 'm', name: 'قامة → متر', icon: '🙌', category: 'length' },
+  { from: 'm', to: 'fathom', name: 'متر → قامة', icon: '📏', category: 'length' },
+  { from: 'league', to: 'km', name: 'فرسخ → كيلومتر', icon: '🐫', category: 'length' },
+  { from: 'km', to: 'league', name: 'كيلومتر → فرسخ', icon: '🏃', category: 'length' },
 
   // وحدات الوزن التراثية
-  { from: 'mann', to: 'kilogram', name: 'من → كيلوجرام', icon: '🏺', category: 'weight' },
-  { from: 'kilogram', to: 'mann', name: 'كيلوجرام → من', icon: '⚖️', category: 'weight' },
-  { from: 'mithqal', to: 'gram', name: 'مثقال → جرام', icon: '💎', category: 'weight' },
-  { from: 'gram', to: 'mithqal', name: 'جرام → مثقال', icon: '⚖️', category: 'weight' },
-  { from: 'dirham', to: 'gram', name: 'درهم → جرام', icon: '🪙', category: 'weight' },
-  { from: 'gram', to: 'dirham', name: 'جرام → درهم', icon: '⚖️', category: 'weight' },
-  { from: 'gulf_lb', to: 'kilogram', name: 'رطل سعودي → كيلوجرام', icon: '🇸🇦', category: 'weight' },
-  { from: 'kilogram', to: 'gulf_lb', name: 'كيلوجرام → رطل سعودي', icon: '⚖️', category: 'weight' },
+  { from: 'mann', to: 'kg', name: 'من → كيلوجرام', icon: '🏺', category: 'weight' },
+  { from: 'kg', to: 'mann', name: 'كيلوجرام → من', icon: '⚖️', category: 'weight' },
+  { from: 'mithqal', to: 'g', name: 'مثقال → جرام', icon: '💎', category: 'weight' },
+  { from: 'g', to: 'mithqal', name: 'جرام → مثقال', icon: '⚖️', category: 'weight' },
+  { from: 'dirham', to: 'g', name: 'درهم → جرام', icon: '🪙', category: 'weight' },
+  { from: 'g', to: 'dirham', name: 'جرام → درهم', icon: '⚖️', category: 'weight' },
+  { from: 'gulf_lb', to: 'kg', name: 'رطل سعودي → كيلوجرام', icon: '🇸🇦', category: 'weight' },
+  { from: 'kg', to: 'gulf_lb', name: 'كيلوجرام → رطل سعودي', icon: '⚖️', category: 'weight' },
 ];
 
 // ==========================================
@@ -66,7 +66,7 @@ const AncientConvertPair: React.FC = () => {
       } else if (fromUnit.category === 'weight' && toUnit.category === 'weight') {
         dynamicTitle = `تحويل أوزان الذهب والمجوهرات: ${fromUnit.name} إلى ${toUnit.name}`;
       }
-      document.title = `${dynamicTitle} | تحويلاتي`;
+      document.title = `${dynamicTitle} | تحويلاتי`;
 
       let metaDesc = document.querySelector('meta[name="description"]');
       if (!metaDesc) {

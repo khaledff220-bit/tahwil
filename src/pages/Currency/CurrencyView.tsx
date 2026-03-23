@@ -155,7 +155,7 @@ const CurrencyView: React.FC<CurrencyViewProps> = ({
             <button
               onClick={onConvert}
               disabled={loading || !fromAmount}
-              className="w-full bg-gradient-to-l from-blue-600 to-cyan-600 text-white py-4 rounded-xl font-bold hover:shadow-lg transition disabled:opacity-50 transform hover:scale-[1.02] active:scale-[0.98]"
+              className="w-full bg-gradient-to-l from-blue-600 to-cyan-600 text-white py-4 rounded-xl font-bold hover:shadow-xl transition disabled:opacity-50 transform hover:scale-[1.02] active:scale-[0.98]"
             >
               {loading ? 'جاري التحويل...' : 'تحويل'}
             </button>

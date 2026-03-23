@@ -57,32 +57,40 @@ const Footer: React.FC = () => {
       ]
     },
     {
-  title: '🏺 مقاييس تراثية',
-  links: [
-    { name: 'ذراع → متر', path: '/ancient/convert/cubit/meter' },
-    { name: 'شبر → سم', path: '/ancient/convert/span/centimeter' },
-    { name: 'من → كيلو', path: '/ancient/convert/mann/kilogram' },
-    { name: 'مثقال → جرام', path: '/ancient/convert/mithqal/gram' },
-    { name: 'قامة → متر', path: '/ancient/convert/fathom/meter' },
-    { name: 'فرسخ → كيلو', path: '/ancient/convert/league/kilometer' },
-    { name: 'درهم → جرام', path: '/ancient/convert/dirham/gram' },
-    { name: 'رطل سعودي → كيلو', path: '/ancient/convert/gulf_lb/kilogram' },
-  ]
-},
+      title: '🏺 مقاييس تراثية',
+      links: [
+        { name: 'ذراع → متر', path: '/ancient/convert/cubit/m' },
+        { name: 'شبر → سم', path: '/ancient/convert/span/cm' },
+        { name: 'من → كيلو', path: '/ancient/convert/mann/kg' },
+        { name: 'مثقال → جرام', path: '/ancient/convert/mithqal/g' },
+        { name: 'قامة → متر', path: '/ancient/convert/fathom/m' },
+        { name: 'فرسخ → كيلو', path: '/ancient/convert/league/km' },
+        { name: 'درهم → جرام', path: '/ancient/convert/dirham/g' },
+        { name: 'رطل سعودي → كيلو', path: '/ancient/convert/gulf_lb/kg' },
+      ]
+    },
+    {
+      title: '📜 حول الموقع',
+      links: [
+        { name: 'من نحن', path: '/about' },
+        { name: 'سياسة الخصوصية', path: '/privacy' },
+        { name: 'اتفاقية الاستخدام', path: '/terms' },
+      ]
+    },
   ];
 
   return (
     <footer className="bg-slate-900 text-slate-400 pt-12 pb-6">
       <div className="container mx-auto px-4">
         {/* Fat Footer - روابط سريعة */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 mb-8">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-7 gap-8 mb-8">
           {sections.map((section) => (
             <div key={section.title}>
               <h3 className="text-white font-bold mb-4">{section.title}</h3>
               <ul className="space-y-2">
                 {section.links.map((link) => (
                   <li key={link.path}>
-                    <Link to={link.path} className="text-sm hover:text-emerald-400 transition">
+                    <Link to={link.path} className="text-sm hover:text-emerald-400 hover:translate-x-1 transition-all duration-200">
                       {link.name}
                     </Link>
                   </li>

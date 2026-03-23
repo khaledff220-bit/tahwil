@@ -299,7 +299,7 @@ const LengthView: React.FC<LengthViewProps> = ({
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
             {/* بطاقة النظام المتري */}
-            <div className="bg-white p-5 rounded-2xl shadow-md border-r-4 border-blue-500 hover:shadow-lg transition">
+            <div className="bg-white p-5 rounded-2xl shadow-md border-r-4 border-blue-500 hover:shadow-xl transition">
               <div className="flex items-center gap-3 mb-3">
                 <span className="text-3xl">📏</span>
                 <h3 className="text-lg font-bold text-blue-700">النظام المتري</h3>
@@ -310,7 +310,7 @@ const LengthView: React.FC<LengthViewProps> = ({
             </div>
 
             {/* بطاقة النظام الإمبراطوري */}
-            <div className="bg-white p-5 rounded-2xl shadow-md border-r-4 border-green-500 hover:shadow-lg transition">
+            <div className="bg-white p-5 rounded-2xl shadow-md border-r-4 border-green-500 hover:shadow-xl transition">
               <div className="flex items-center gap-3 mb-3">
                 <span className="text-3xl">🇬🇧</span>
                 <h3 className="text-lg font-bold text-green-700">النظام الإمبراطوري</h3>
@@ -321,7 +321,7 @@ const LengthView: React.FC<LengthViewProps> = ({
             </div>
 
             {/* بطاقة الوحدات التراثية */}
-            <div className="bg-white p-5 rounded-2xl shadow-md border-r-4 border-amber-500 hover:shadow-lg transition">
+            <div className="bg-white p-5 rounded-2xl shadow-md border-r-4 border-amber-500 hover:shadow-xl transition">
               <div className="flex items-center gap-3 mb-3">
                 <span className="text-3xl">🏺</span>
                 <h3 className="text-lg font-bold text-amber-700">وحدات تراثية عربية</h3>
@@ -332,7 +332,7 @@ const LengthView: React.FC<LengthViewProps> = ({
             </div>
 
             {/* بطاقة الوحدات الفلكية */}
-            <div className="bg-white p-5 rounded-2xl shadow-md border-r-4 border-purple-500 hover:shadow-lg transition">
+            <div className="bg-white p-5 rounded-2xl shadow-md border-r-4 border-purple-500 hover:shadow-xl transition">
               <div className="flex items-center gap-3 mb-3">
                 <span className="text-3xl">🌌</span>
                 <h3 className="text-lg font-bold text-purple-700">وحدات فلكية</h3>
@@ -343,7 +343,7 @@ const LengthView: React.FC<LengthViewProps> = ({
             </div>
 
             {/* بطاقة التطبيقات العملية */}
-            <div className="bg-white p-5 rounded-2xl shadow-md border-r-4 border-teal-500 hover:shadow-lg transition">
+            <div className="bg-white p-5 rounded-2xl shadow-md border-r-4 border-teal-500 hover:shadow-xl transition">
               <div className="flex items-center gap-3 mb-3">
                 <span className="text-3xl">🏗️</span>
                 <h3 className="text-lg font-bold text-teal-700">التطبيقات العملية</h3>
@@ -354,7 +354,7 @@ const LengthView: React.FC<LengthViewProps> = ({
             </div>
 
             {/* بطاقة تحويلات شائعة */}
-            <div className="bg-white p-5 rounded-2xl shadow-md border-r-4 border-orange-500 hover:shadow-lg transition">
+            <div className="bg-white p-5 rounded-2xl shadow-md border-r-4 border-orange-500 hover:shadow-xl transition">
               <div className="flex items-center gap-3 mb-3">
                 <span className="text-3xl">🔄</span>
                 <h3 className="text-lg font-bold text-orange-700">تحويلات شائعة</h3>

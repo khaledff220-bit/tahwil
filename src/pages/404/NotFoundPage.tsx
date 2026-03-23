@@ -59,7 +59,7 @@ const NotFoundPage: React.FC = () => {
             <div className="space-y-6">
               <Link 
                 to="/" 
-                className="inline-block bg-gradient-to-l from-blue-600 to-blue-700 text-white px-8 py-4 rounded-xl font-bold hover:shadow-lg transition transform hover:scale-105"
+                className="inline-block bg-gradient-to-l from-blue-600 to-blue-700 text-white px-8 py-4 rounded-xl font-bold hover:shadow-xl transition transform hover:scale-105"
               >
                 العودة إلى الرئيسية
               </Link>
