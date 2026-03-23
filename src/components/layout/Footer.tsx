@@ -56,13 +56,25 @@ const Footer: React.FC = () => {
         { name: 'مقارنة تواريخ', path: '/date/compare' },
       ]
     },
+    // ✅ قسم المقاييس التراثية الجديد
+    {
+      title: '🏺 مقاييس تراثية',
+      links: [
+        { name: 'ذراع → متر', path: '/ancient' },
+        { name: 'شبر → سم', path: '/ancient' },
+        { name: 'من → كيلو', path: '/ancient' },
+        { name: 'مثقال → جرام', path: '/ancient' },
+        { name: 'قامة → متر', path: '/ancient' },
+        { name: 'فرسخ → كيلو', path: '/ancient' },
+      ]
+    },
   ];
 
   return (
     <footer className="bg-slate-900 text-slate-400 pt-12 pb-6">
       <div className="container mx-auto px-4">
         {/* Fat Footer - روابط سريعة */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 mb-8">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 mb-8">
           {sections.map((section) => (
             <div key={section.title}>
               <h3 className="text-white font-bold mb-4">{section.title}</h3>
