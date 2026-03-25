@@ -78,9 +78,10 @@ const CurrencyView: React.FC<CurrencyViewProps> = ({
         <div className="bg-white/80 backdrop-blur-lg rounded-3xl shadow-2xl overflow-hidden border border-white/20">
           {/* Header */}
           <div className="bg-gradient-to-l from-blue-600 to-cyan-600 p-8 text-center text-white">
-            <h1 className="text-3xl md:text-4xl font-bold mb-2">
+          <h1 className="sr-only">محول العملات: أسعار الصرف المباشرة للريال، الدولار، اليورو، والجنيه</h1>
+            <h2 className="text-3xl md:text-4xl font-bold mb-2">
               تحويل العملات
-            </h1>
+            </h2>
             <p className="opacity-90 text-lg">
               حول بين أكثر من 50 عملة عربية وعالمية بأسعار محدثة
             </p>
