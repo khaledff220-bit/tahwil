@@ -48,6 +48,7 @@ const Home: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-white">
+      <h1 className="sr-only">تحويلاتي - أدوات تحويل العملات، الأوزان، الأطوال، الحرارة، والتواريخ</h1>
       
       <main>
         {/* Hero Section - العنوان الرئيسي */}
