@@ -202,9 +202,10 @@ const WeightConvertPair: React.FC = () => {
             <span className="text-3xl">→</span>
             <span className="text-5xl">{getUnitIcon(lowerTo)}</span>
           </div>
-          <h1 className="text-3xl md:text-4xl font-bold mb-2">
+          <h1 className="sr-only">محول الأوزان: تحويل الكيلو، الجرام، الباوند، الأوقية، والمثقال بدقة</h1>
+          <h2 className="text-3xl md:text-4xl font-bold mb-2">
             تحويل {fromUnit.name} إلى {toUnit.name}
-          </h1>
+          </h2>
           <p className="opacity-90 text-lg">
             1 {fromUnit.symbol} = {result?.formattedFactor || '...'} {toUnit.symbol}
           </p>
