@@ -57,9 +57,9 @@ const Home: React.FC = () => {
           
           <div className="relative container mx-auto px-4 text-center">
             <div className="reveal">
-              <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-slate-800 to-slate-600 bg-clip-text text-transparent">
+              <h2 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-slate-800 to-slate-600 bg-clip-text text-transparent">
                 تحويلاتي
-              </h1>
+              </h2>
               <p className="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto mb-8">
                 منصة القياس العربية الأولى. حوّل بدقة، وتعلّم بذكاء.
               </p>
