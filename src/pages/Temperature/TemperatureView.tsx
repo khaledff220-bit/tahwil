@@ -79,7 +79,6 @@ const TemperatureView: React.FC<TemperatureViewProps> = ({
 
   return (
     <>
-      <h1 className="sr-only">محول درجات الحرارة</h1>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData).replace(/</g, '\\u003c') }}
@@ -87,6 +86,7 @@ const TemperatureView: React.FC<TemperatureViewProps> = ({
 
       <div className="max-w-4xl mx-auto px-4 py-6 font-cairo" dir="rtl">
         {/* Breadcrumbs */}
+        <h1 className="sr-only">محول درجات الحرارة</h1>
         <nav className="flex items-center gap-2 text-sm mb-6 text-gray-500 bg-white p-3 rounded-lg shadow-sm">
           <Link to="/" className="hover:text-orange-600 transition">الرئيسية</Link>
           <span>/</span>
