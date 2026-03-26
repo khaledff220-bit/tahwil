@@ -4,7 +4,7 @@
   <!-- ========== الصفحة الرئيسية ========== -->
   <url>
     <loc>https://tahwil-three.vercel.app/</loc>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-03-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -12,19 +12,19 @@
   <!-- ========== الصفحات الثابتة ========== -->
   <url>
     <loc>https://tahwil-three.vercel.app/about</loc>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-03-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://tahwil-three.vercel.app/privacy</loc>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-03-26</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tahwil-three.vercel.app/terms</loc>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-03-26</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -32,37 +32,37 @@
   <!-- ========== قسم تحويل العملات ========== -->
   <url>
     <loc>https://tahwil-three.vercel.app/currency</loc>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-03-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://tahwil-three.vercel.app/currency/convert/usd/sar</loc>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-03-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tahwil-three.vercel.app/currency/convert/usd/egp</loc>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-03-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tahwil-three.vercel.app/currency/convert/usd/aed</loc>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-03-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tahwil-three.vercel.app/currency/convert/eur/egp</loc>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-03-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tahwil-three.vercel.app/currency/convert/kwd/usd</loc>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-03-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
@@ -70,31 +70,31 @@
   <!-- ========== قسم تحويل الوزن ========== -->
   <url>
     <loc>https://tahwil-three.vercel.app/weight</loc>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-03-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://tahwil-three.vercel.app/weight/convert/kg/lb</loc>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-03-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tahwil-three.vercel.app/weight/convert/lb/kg</loc>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-03-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tahwil-three.vercel.app/weight/convert/gold-oz/g</loc>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-03-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://tahwil-three.vercel.app/weight/convert/mithqal/g</loc>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-03-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -102,25 +102,25 @@
   <!-- ========== قسم تحويل الطول ========== -->
   <url>
     <loc>https://tahwil-three.vercel.app/length</loc>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-03-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://tahwil-three.vercel.app/length/convert/m/ft</loc>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-03-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tahwil-three.vercel.app/length/convert/ly/km</loc>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-03-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://tahwil-three.vercel.app/length/convert/cubit/m</loc>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-03-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -128,19 +128,19 @@
   <!-- ========== قسم تحويل الحرارة ========== -->
   <url>
     <loc>https://tahwil-three.vercel.app/temperature</loc>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-03-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://tahwil-three.vercel.app/temperature/convert/celsius/fahrenheit</loc>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-03-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tahwil-three.vercel.app/temperature/convert/celsius/kelvin</loc>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-03-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -148,25 +148,25 @@
   <!-- ========== قسم تحويل التاريخ ========== -->
   <url>
     <loc>https://tahwil-three.vercel.app/date</loc>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-03-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://tahwil-three.vercel.app/date/today</loc>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-03-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tahwil-three.vercel.app/date/age-calculator</loc>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-03-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tahwil-three.vercel.app/date/compare</loc>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-03-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -174,7 +174,7 @@
   <!-- ========== قسم المقاييس التراثية (جديد) ========== -->
   <url>
     <loc>https://tahwil-three.vercel.app/ancient</loc>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-03-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -182,49 +182,49 @@
   <!-- صفحات المقاييس التراثية الديناميكية -->
   <url>
     <loc>https://tahwil-three.vercel.app/ancient/convert/cubit/m</loc>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-03-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://tahwil-three.vercel.app/ancient/convert/span/cm</loc>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-03-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://tahwil-three.vercel.app/ancient/convert/mann/kg</loc>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-03-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://tahwil-three.vercel.app/ancient/convert/mithqal/g</loc>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-03-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://tahwil-three.vercel.app/ancient/convert/fathom/m</loc>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-03-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://tahwil-three.vercel.app/ancient/convert/league/km</loc>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-03-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://tahwil-three.vercel.app/ancient/convert/dirham/g</loc>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-03-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://tahwil-three.vercel.app/ancient/convert/gulf_lb/kg</loc>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-03-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -232,25 +232,25 @@
   <!-- الأزواج العكسية للمقاييس التراثية -->
   <url>
     <loc>https://tahwil-three.vercel.app/ancient/convert/m/cubit</loc>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-03-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://tahwil-three.vercel.app/ancient/convert/cm/span</loc>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-03-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://tahwil-three.vercel.app/ancient/convert/kg/mann</loc>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-03-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://tahwil-three.vercel.app/ancient/convert/g/mithqal</loc>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-03-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
