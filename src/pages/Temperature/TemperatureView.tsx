@@ -79,6 +79,7 @@ const TemperatureView: React.FC<TemperatureViewProps> = ({
 
   return (
     <>
+      <h1 className="sr-only">محول درجات الحرارة</h1>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData).replace(/</g, '\\u003c') }}
@@ -95,10 +96,9 @@ const TemperatureView: React.FC<TemperatureViewProps> = ({
         {/* Glassmorphism Card */}
         <div className="bg-white/80 backdrop-blur-lg rounded-3xl shadow-2xl overflow-hidden border border-white/20">
           <div className="bg-gradient-to-l from-orange-600 to-red-600 p-8 text-center text-white">
-          <h1 className="sr-only">محول درجات الحرارة: تحويل دقيق بين السليزيوس، الفهرنهايت، والكلفن</h1>
-            <h2 className="text-3xl md:text-4xl font-bold mb-2">
+            <h1 className="text-3xl md:text-4xl font-bold mb-2">
               تحويل الحرارة
-            </h2>
+            </h1>
             <p className="opacity-90 text-lg">
               حوّل بين 8 وحدات حرارة مختلفة - من سيلزيوس إلى كلفن، ومن ريومور إلى نيوتن
             </p>
