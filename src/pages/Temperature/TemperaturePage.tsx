@@ -15,7 +15,7 @@ const TemperaturePage: React.FC = () => {
 
   // تحسين SEO: تحديث meta tags
   useEffect(() => {
-    document.title = 'تحويل الحرارة - حاسبة درجات الحرارة الدقيقة مع وحدات تاريخية | تحويلاتي';
+    document.title = 'تحويل درجات الحرارة | حاسبة دقيقة وشاملة';
 
     let metaDesc = document.querySelector('meta[name="description"]');
     if (!metaDesc) {

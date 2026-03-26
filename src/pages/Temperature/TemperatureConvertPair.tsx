@@ -232,7 +232,7 @@ const TemperatureConvertPair: React.FC = () => {
       } else if (fromUnit.category === 'historical' || toUnit.category === 'historical') {
         dynamicTitle = `تحويل ${fromUnit.name} إلى ${toUnit.name} | وحدات حرارة تاريخية`;
       }
-      document.title = `${dynamicTitle} | تحويلاتي`;
+      document.title = `${dynamicTitle}`;
 
       let metaDesc = document.querySelector('meta[name="description"]');
       if (!metaDesc) {
