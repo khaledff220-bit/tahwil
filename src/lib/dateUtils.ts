@@ -12,7 +12,7 @@ export const getDaysInGregorianMonth = (monthName: string, year: number): number
 };
 
 // ==================== API الدقيق للتحويل (Aladhan API) ====================
-const ALADHAN_API = 'http://api.aladhan.com/v1';
+const ALADHAN_API = 'https://api.aladhan.com/v1';
 
 // تحويل هجري → ميلادي
 export const convertHijriToGregorian = async (day: number, monthName: string, year: number) => {
