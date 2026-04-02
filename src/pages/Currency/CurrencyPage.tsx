@@ -1,11 +1,10 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import CurrencyView from './CurrencyView';
-import { 
-  getSortedCurrencies, 
-  convertCurrency, 
+import {
+  getSortedCurrencies,
+  convertCurrency,
   fetchExchangeRates,
-  generateMetaDescription,
-  CURRENCIES
+  generateMetaDescription
 } from './CurrencyLogic';
 import { ConversionResult } from './CurrencyTypes';
 
@@ -23,7 +22,7 @@ const CurrencyPage: React.FC = () => {
   useEffect(() => {
     const fromName = currencies.find(c => c.code === fromCurrency)?.name || fromCurrency;
     const toName = currencies.find(c => c.code === toCurrency)?.name || toCurrency;
-    
+
     document.title = `تحويل ${fromName} إلى ${toName} - سعر الصرف اليوم`;
 
     let metaDescription = document.querySelector('meta[name="description"]');
@@ -32,11 +31,11 @@ const CurrencyPage: React.FC = () => {
       metaDescription.setAttribute('name', 'description');
       document.head.appendChild(metaDescription);
     }
-    
-    const description = result 
+
+    const description = result
       ? generateMetaDescription(fromName, toName, result.rate)
       : generateMetaDescription(fromName, toName);
-    
+
     metaDescription.setAttribute('content', description);
 
     // كلمات مفتاحية خليجية
@@ -46,7 +45,7 @@ const CurrencyPage: React.FC = () => {
       metaKeywords.setAttribute('name', 'keywords');
       document.head.appendChild(metaKeywords);
     }
-    metaKeywords.setAttribute('content', 
+    metaKeywords.setAttribute('content',
       'تحويل العملات, سعر الدولار, سعر الريال, سعر اليورو, الدينار الكويتي, الدرهم الإماراتي, صرف العملات, تحويل عملات'
     );
   }, [fromCurrency, toCurrency, result]);
@@ -97,21 +96,25 @@ const CurrencyPage: React.FC = () => {
   }, [fromCurrency, toCurrency]);
 
   return (
-    <CurrencyView
-      currencies={currencies}
-      result={result}
-      fromAmount={fromAmount}
-      toAmount={toAmount}
-      fromCurrency={fromCurrency}
-      toCurrency={toCurrency}
-      onFromAmountChange={setFromAmount}
-      onFromCurrencyChange={setFromCurrency}
-      onToCurrencyChange={setToCurrency}
-      onSwapCurrencies={handleSwapCurrencies}
-      onConvert={() => {}}
-      loading={loading}
-      lastUpdate={lastUpdate}
-    />
+    <>
+      <link rel="canonical" href="https://tahwil-three.vercel.app/currency" />
+      
+      <CurrencyView
+        currencies={currencies}
+        result={result}
+        fromAmount={fromAmount}
+        toAmount={toAmount}
+        fromCurrency={fromCurrency}
+        toCurrency={toCurrency}
+        onFromAmountChange={setFromAmount}
+        onFromCurrencyChange={setFromCurrency}
+        onToCurrencyChange={setToCurrency}
+        onSwapCurrencies={handleSwapCurrencies}
+        onConvert={() => {}}
+        loading={loading}
+        lastUpdate={lastUpdate}
+      />
+    </>
   );
 };
 
