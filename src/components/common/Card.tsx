@@ -16,11 +16,20 @@ const colorClasses = {
   gray: 'border-gray-500 bg-gray-50'
 };
 
+const titleColorClasses = {
+  green: 'text-green-700',
+  blue: 'text-blue-700',
+  yellow: 'text-yellow-700',
+  purple: 'text-purple-700',
+  red: 'text-red-700',
+  gray: 'text-gray-700'
+};
+
 const Card: React.FC<CardProps> = ({ children, title, color = 'gray', className = '' }) => {
   return (
     <div className={`bg-white rounded-2xl shadow-lg p-6 border-r-4 ${colorClasses[color]} ${className}`}>
       {title && (
-        <h2 className={`text-2xl font-bold text-${color}-700 mb-4`}>
+        <h2 className={`text-2xl font-bold ${titleColorClasses[color]} mb-4`}>
           {title}
         </h2>
       )}
