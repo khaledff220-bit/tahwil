@@ -1,8 +1,5 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React from 'react';
 import DateConverter from '@/components/converters/DateConverter';
-import Header from '@/components/layout/Header';
-import Footer from '@/components/layout/Footer';
 import SEOContent from '@/components/seo/SEOContent';
 import FAQ from '@/components/seo/FAQ';
 
@@ -28,6 +25,8 @@ const faqItems = [
 const DatePage: React.FC = () => {
   return (
     <>
+      <link rel="canonical" href="https://tahwil-three.vercel.app/date" />
+      
       <div className="container mx-auto px-4 py-8">
         <div className="mb-8 text-center">
           <h1 className="text-4xl font-bold text-gray-800 mb-2">
@@ -46,12 +45,12 @@ const DatePage: React.FC = () => {
         >
           <div className="space-y-4 text-gray-700">
             <p>
-              <strong>التقويم الهجري (القمري):</strong> يعتمد على دورة القمر حول الأرض، 
-              ومدته 354 أو 355 يوماً. يرتبط ارتباطاً وثيقاً بالمناسبات الدينية الإسلامية 
+              <strong>التقويم الهجري (القمري):</strong> يعتمد على دورة القمر حول الأرض،
+              ومدته 354 أو 355 يوماً. يرتبط ارتباطاً وثيقاً بالمناسبات الدينية الإسلامية
               مثل شهر رمضان المبارك والحج. يبدأ بهجرة النبي محمد ﷺ من مكة إلى المدينة عام 622م.
             </p>
             <p>
-              <strong>التقويم الميلادي (الشمسي):</strong> يعتمد على دورة الشمس، ومدته 365 أو 366 يوماً. 
+              <strong>التقويم الميلادي (الشمسي):</strong> يعتمد على دورة الشمس، ومدته 365 أو 366 يوماً.
               وهو الأكثر استخداماً في المعاملات الرسمية والدولية. يبدأ بميلاد السيد المسيح عليه السلام.
             </p>
           </div>
