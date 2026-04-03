@@ -108,11 +108,14 @@ const ConvertPair: React.FC = () => {
     }
   }, [fromCurrency, toCurrency]);
 
+  // ✅ التعديل الجديد: منع تحويل العملة إلى نفسها
   useEffect(() => {
-    if (!fromCurrency || !toCurrency) {
+    // إذا كانت العملات غير موجودة في النظام
+    // أو إذا كانت العملة المصدر هي نفسها العملة الهدف (مثل EGP إلى EGP)
+    if (!fromCurrency || !toCurrency || cleanFrom === cleanTo) {
       navigate('/currency', { replace: true });
     }
-  }, [fromCurrency, toCurrency, navigate]);
+  }, [fromCurrency, toCurrency, cleanFrom, cleanTo, navigate]);
 
   const quickPairs = [
     { from: 'USD', to: 'SAR', name: 'دولار / ريال سعودي' },
@@ -220,7 +223,7 @@ const ConvertPair: React.FC = () => {
               value={amount}
               onChange={(e) => setAmount(e.target.value)}
               className="w-full p-4 text-2xl border-2 border-gray-200 rounded-xl focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition"
-              placeholder={`أدخل المبلغ`}
+              placeholder="أدخل المبلغ"
               step="any"
               min="0"
             />
@@ -301,7 +304,7 @@ const ConvertPair: React.FC = () => {
           معلومات عن تحويل {fromCurrency.name} إلى {toCurrency.name}
         </h2>
         <div dangerouslySetInnerHTML={{ __html: getCurrencyIntroduction(fromCurrency.name, toCurrency.name, rate || undefined) }} />
-        
+
         {/* النصائح المالية */}
         <div dangerouslySetInnerHTML={{ __html: getCurrencySmartTips() }} />
       </div>
