@@ -3,6 +3,7 @@ import { Outlet } from 'react-router-dom';
 import Header from './components/layout/Header';
 import Footer from './components/layout/Footer';
 import ScrollToTop from './components/common/ScrollToTop';
+import InstallButton from './components/common/InstallButton';
 
 const App: React.FC = () => {
   return (
@@ -13,6 +14,7 @@ const App: React.FC = () => {
         <Outlet />
       </main>
       <Footer />
+      <InstallButton />
     </div>
   );
 };
