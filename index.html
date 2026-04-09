@@ -26,12 +26,28 @@
     
     <meta name="format-detection" content="telephone=no" />
     
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-79FL78HGER"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-79FL78HGER');
+    <!-- Google Analytics - يتم تحميله فقط في الوضع العادي -->
+    <script id="ga-script">
+      (function() {
+        // التحقق من وجود mode=developer في الرابط
+        const urlParams = new URLSearchParams(window.location.search);
+        const isDeveloperMode = urlParams.get('mode') === 'developer';
+        
+        if (!isDeveloperMode) {
+          // تحميل Google Analytics فقط إذا لم يكن وضع المطور
+          const script = document.createElement('script');
+          script.src = 'https://www.googletagmanager.com/gtag/js?id=G-79FL78HGER';
+          script.async = true;
+          document.head.appendChild(script);
+          
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-79FL78HGER');
+        } else {
+          console.log('🔧 Developer Mode: Google Analytics is disabled');
+        }
+      })();
     </script>
     
     <meta property="og:image" content="https://tahwil-three.vercel.app/og-image.jpg" />
